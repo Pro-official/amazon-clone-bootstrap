@@ -1,0 +1,3 @@
+marp-marker: <i class="fas fa-map-marker-alt"></i>
+card: <i class="fas fa-cart-plus"></i>
+menu: <i class="fas fa-bars"></i>

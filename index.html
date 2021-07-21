@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e481438ce8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/amazon-fav.png" type="image/x-icon" />
+</head>
+
+<body style="background-color: #eaeded;">
+    <header>
+
+        <!-- Navbar is here  -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #131921">
+            <div class="container-fluid d-flex align-items-center justify-content-evenly">
+                <a class="navbar-brand" href="#">
+                    <img class="mt-2 me-2" src="images/logo.png" alt="" width="100" height="40"
+                        class="d-inline-block align-text-top">
+                    <i class="fas fa-map-marker-alt me-2"></i>Bangladesh
+                </a>
+                <form class="d-flex">
+                    <select class="form-select form-select-sm" style="width: 65px; background-color: #f3f3f3;"
+                        aria-label=".form-select-sm example">
+                        <option selected>All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                        style="width: 750px; height: 40px;">
+                    <button class="btn btn-outline-success me-4 text-dark" type="submit"
+                        style="background-color: #febd69;"><i class="fas fa-search"></i></button>
+                </form>
+                <a class="navbar-brand" href="#">
+                    <img src="images/america.png" alt="" width="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link active" aria-current="page" href="#">Orders</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link active" aria-current="page" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <i class="fas fa-cart-plus text-white"></i>
+                            <a class="nav-link active" aria-current="page" href="#">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #232f3e">
+            <div class="container-fluid">
+                <i class="fas fa-bars text-white me-2"></i>
+                <a class="navbar-brand" href="#">All</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Today's Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Customer Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Gift Cards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Registry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sell</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- carousel -->
+
+        <section class="container-fluid" id="top">
+            <div id="carouselExampleSlidesOnly" class="carousel slide me-2 ms-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slide 1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide 2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide 3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide 4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide 5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide 6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- First Cards -->
+
+        <section class="container-fluid" style="margin-top: -350px;">
+            <div class="row card-group gy-3 ms-3 me-3">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Find your ideal TV</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Computers & Accessories</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/ss4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">It's time to choose.</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/ss1.png" style="width:100%;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">See amazing things when sign in.</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Oculus</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Get fit at home</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/ss2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaming accessories</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/5.jpg" style="width:100%;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">AmazonBasics</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Beauty and Personal Care -->
+
+        <section class="container-fluid">
+            <div class="product">
+                <h4 class="fw-normal ms-4 me-4 mt-3" style="background-color: #ffff;">Top Beauty & Personal Care
+                    products</h4>
+                <div class="row card-group row-cols-1 row-cols-md-2 row-cols-lg-6 g-2 ms-4 me-4"
+                    style="background-color: #ffff;">
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/6.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/7.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/8.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/9.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/10.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/11.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Best selling in daily life  -->
+
+        <section class="container-fluid mt-4">
+            <div class="product">
+                <h4 class="fw-normal ms-4 me-4 mt-3" style="background-color: #ffff;">Best Sellers in Daily Life</h4>
+                <div class="row card-group row-cols-1 row-cols-md-2 row-cols-lg-6 g-2 ms-4 me-4"
+                    style="background-color: #ffff;">
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/18.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/13.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/14.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/15.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/16.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/17.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Second cards  -->
+
+        <section class="container-fluid">
+            <div class="row card-group mt-4 gy-3 ms-3 me-3">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/ss4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">It's time to choose.</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/44.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shop Laptops & Tablets</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/43.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Explore home bedding</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <img src="images/ss2.png" style="width:100%;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaming accessories</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">See more</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!-- New Products -->
+
+        <section class="container-fluid mt-4">
+            <div class="product">
+                <h4 class="fw-normal ms-4 me-4 mt-3" style="background-color: #ffff;">Our Other Products</h4>
+                <div class="row card-group row-cols-1 row-cols-md-2 row-cols-lg-6 g-2 ms-4 me-4"
+                    style="background-color: #ffff;">
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/19.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/20.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/21.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/22.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/23.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/24.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Again other products  -->
+
+        <section class="container-fluid mt-4">
+            <div class="product">
+                <h4 class="fw-normal ms-4 me-4 mt-3" style="background-color: #ffff;">Our Kid's Special</h4>
+                <div class="row card-group row-cols-1 row-cols-md-2 row-cols-lg-6 g-2 ms-4 me-4"
+                    style="background-color: #ffff;">
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/25.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/26.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/27.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/28.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/29.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/30.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Once again -->
+
+        <section class="container-fluid mt-4">
+            <div class="product">
+                <h4 class="fw-normal ms-4 me-4 mt-3" style="background-color: #ffff;">Every Parents Should Buy This</h4>
+                <div class="row card-group row-cols-1 row-cols-md-2 row-cols-lg-6 g-2 ms-4 me-4"
+                    style="background-color: #ffff;">
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/31.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/32.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/33.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/34.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/35.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/36.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- I think this is the last one  -->
+
+        <section class="container-fluid mt-4 mb-5">
+            <div class="product">
+                <h4 class="fw-normal ms-4 me-4 mt-3" style="background-color: #ffff;">Our Electronic Devices</h4>
+                <div class="row card-group row-cols-1 row-cols-md-2 row-cols-lg-6 g-2 ms-4 me-4"
+                    style="background-color: #ffff;">
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/37.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/38.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/39.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/40.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/41.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0">
+                            <img src="images/42.jpg" class="card-img-top" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- It's time to say good bye  -->
+
+        <section class="container-fluid" style="background-color: #ffff;">
+            <div class="sign-in-button bg-white text-center p-5 m-0">
+                <p class="lh-1">If you already have an account</p>
+                <P class="lh-1"><button class="btn btn-warning rounded-5">Sign in to see personalized
+                        recommendations</button></P>
+                <p class="lh-1">New Customer? <a class="text-decoration-none" href="">Start Here</a></p>
+            </div>
+        </section>
+
+
+        <!-- Back to top  -->
+
+        <section class="container-fluid m-0" style="background-color: #37475a;">
+            <div id="home">
+                <a class="text-decoration-none" href="#top">
+                    <p class=" d-block fw-bold p-3 text-center text-white">Go Back to Top
+                    </p>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- footer section  -->
+
+        <footer class="container-fluid text-center p-3" style="background-color: #131a22; margin-top: -17px;">
+            <span class="text-white me-3">Condition of use</span>
+            <span class="text-white me-3">Privacy Notice</span>
+            <span class="text-white me-3">Interest Based Ads</span>
+            <span class="text-white me-3">&copy; 1996-2021, Amazon.com, Inc. or its affiliates</span>
+        </footer>
+
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
